@@ -4,7 +4,16 @@
   "description": "the live and more advanced version of in-class note taking app",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.myelectronapp",
+    "productName": "NotesApp",
+    "win": {
+      "target": "nsis",
+      "icon": "src/media/icon.png"
+    }
   },
   "author": "",
   "license": "ISC",
