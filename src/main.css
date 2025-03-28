@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    position: relative;
+    background-color: #0f030376;
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+body::before {
+    content: "";
+    background-image: url(./media/backgrpund.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    z-index: -10;
+    opacity: 0.75;
+}
+
+label {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: #5c0d16
+}
+
+input,
+textarea {
+    background-color: #fafaf6bc;
+    border-bottom: 1px solid #fcfcfc;
+    border-radius: 7px;
+    padding: .5rem;
+}
+
+textarea {
+    resize: none;
+    overflow-y: hidden;
+    min-height: -webkit-fill-available;
+}
+
+input,
+textarea:focus-visible {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+label {
+    color: #5c0d16;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p,
+input,
+textarea {
+    color: #030303;
+}
+
+a {
+    font-weight: 600;
+    color: rgb(49, 93, 121);
+}
+
+#sidebar>button {
+    padding: .5rem;
+    color: rgba(171, 155, 153, 0.964);
+}
+
+#sidebar {
+    background-color: #f1f1f1;
+}
+
+
+
+.add>button {
+    background-color: #604346;
+}
+
+.delete-button {
+    background-color: rgb(148, 75, 75);
+    width: 5rem;
+    border-radius: 5px;
+    padding: .5rem;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: #ecdccb;
+}

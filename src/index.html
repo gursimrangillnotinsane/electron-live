@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1, initial-scale=1.0">
+        <!-- <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; object-src 'none';"> -->
+
+        <title>Note App</title>
+        <link href="./main.css" rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="./media/icon.ico" />
+    </head>
+    <body>
+        <nav class="p-4">
+            <a href="add.html">Add a page</a>
+        </nav>
+        <section>
+            <div class="flex justify-center">
+                <h1 id="title" class="text-2xl font-bold ">Notes App</h1>
+            </div>
+            <div class="flex gap-4 p-4">
+                <div id="sidebar" class="flex flex-col w-1/4 rounded p-4 ">
+                    <button class="active">j</button>
+                    <button>j</button>
+                    <button>j</button>
+                </div>
+                <div id="noteField" class="w-full flex flex-col gap-4">
+                    <textarea id="noteContent" class="w-full h-full"></textarea>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="script/script.js"></script>
+</html>
